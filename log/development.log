@@ -1,0 +1,113 @@
+Started GET "/" for ::1 at 2023-05-17 19:49:10 +0900
+Processing by SmsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sms/index.html.erb within layouts/application
+  Rendered sms/index.html.erb within layouts/application (Duration: 21.8ms | Allocations: 4575)
+  Rendered layout layouts/application.html.erb (Duration: 303.8ms | Allocations: 97073)
+Completed 200 OK in 342ms (Views: 317.7ms | ActiveRecord: 0.0ms | Allocations: 101731)
+
+
+Started GET "/" for ::1 at 2023-05-17 19:52:08 +0900
+Processing by SmsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sms/index.html.erb within layouts/application
+  Rendered sms/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 3281)
+  Rendered layout layouts/application.html.erb (Duration: 22.7ms | Allocations: 5856)
+Completed 200 OK in 29ms (Views: 26.6ms | ActiveRecord: 0.0ms | Allocations: 6756)
+
+
+Started POST "/sms" for ::1 at 2023-05-17 19:54:28 +0900
+  
+AbstractController::ActionNotFound (The action 'send_sms' could not be found for SmsController):
+  
+actionpack (7.0.4.3) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.4.3) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.4.3) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4.3) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4.3) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4.3) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.7) lib/rack/etag.rb:27:in `call'
+rack (2.2.7) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.7) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.7) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.7) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.4.3) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.7) lib/rack/method_override.rb:24:in `call'
+rack (2.2.7) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.7) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for ::1 at 2023-05-17 19:54:29 +0900
+Processing by SmsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sms/index.html.erb within layouts/application
+  Rendered sms/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 2884)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 5197)
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 5497)
+
+
+Started GET "/" for ::1 at 2023-05-17 19:56:26 +0900
+Processing by SmsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sms/index.html.erb within layouts/application
+  Rendered sms/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 2907)
+  Rendered layout layouts/application.html.erb (Duration: 22.6ms | Allocations: 16677)
+Completed 200 OK in 26ms (Views: 23.7ms | Allocations: 17311)
+
+
+Started POST "/sms" for ::1 at 2023-05-17 19:56:29 +0900
+Processing by SmsController#send_sms as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "number"=>"a", "message"=>"a", "commit"=>"Send Message"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (Allocations: 972)
+
+
+Started GET "/" for ::1 at 2023-05-17 19:56:29 +0900
+Processing by SmsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering sms/index.html.erb within layouts/application
+  Rendered sms/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 2816)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 5021)
+Completed 200 OK in 9ms (Views: 7.1ms | Allocations: 5340)
+
+
